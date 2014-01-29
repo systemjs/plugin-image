@@ -4,7 +4,7 @@
   https://github.com/millermedeiros/requirejs-plugins/blob/master/src/image.js
 */
 module.exports = function(name, address, fetch, callback, errback) {
-  img = new Image();
+  var img = new Image();
   img.onerror = errback;
   img.onload = function(evt) {
     window.__imagePluginStore.push(img);
