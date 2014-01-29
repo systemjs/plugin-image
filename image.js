@@ -8,7 +8,7 @@ module.exports = function(name, address, fetch, callback, errback) {
   img.onerror = errback;
   img.onload = function(evt) {
     window.__imagePluginStore.push(img);
-    callback('module.exports = window.__imagePluginStore[' + window.__imagePluginStore.length - 1 + '];');
+    callback('module.exports = window.__imagePluginStore[' + (window.__imagePluginStore.length - 1) + '];');
     try {
       delete img.onload; //release memory - suggested by John Hann
     } catch(err) {
