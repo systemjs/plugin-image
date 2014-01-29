@@ -14,7 +14,7 @@ module.exports = function(name, address, fetch, callback, errback) {
       } catch(err) {
         img.onload = function() {}; // IE7 :(
       }
-    }, 1);
+    }, 7);
   }
   img.src = address;
 }
