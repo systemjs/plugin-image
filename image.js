@@ -3,6 +3,7 @@
   Adapted from Miller Medeiros requirejs-plugins
   https://github.com/millermedeiros/requirejs-plugins/blob/master/src/image.js
 */
+exports.build = false;
 exports.fetch = function(load) {
   return new Promise(function(resolve, reject) {
     var img = load.metadata.img = new Image();
