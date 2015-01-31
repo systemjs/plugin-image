@@ -1,4 +1,4 @@
-plugin-image
+system-image
 ============
 
-Image preloader plugin
+Image preloader plugin for SystemJS.
